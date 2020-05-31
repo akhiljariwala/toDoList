@@ -2,29 +2,49 @@ body {
     padding: 15px;
     background-color: orange;
     font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr, 800px, 1fr;
+}
+
+#Main {
+    grid-column: 1/2;
+    text-align: center;
 }
 
 #Title {
-    padding: 10px;
+    padding: 0;
     font-size: 36px;
-    border: 2px solid white;
-    width: 250px;
+    font-family: cursive;
+
+}
+
+#user-to-do {
+    text-align: center;
 }
 
 #toDoHeader {
     font-size: 24px;   
+
 }
 
 #toDoList {
     list-style: none;
-    padding-left: 20px;
-    width: 250px;
+    padding: 0;
+    width: 70%;
+    margin: auto auto 30px auto;
+    text-align: center;
+}
+
+#toDoForm {
+    text-align: center;
 }
 
 li {
     color: #333333;
     background-color: rgba(255,255,255,.5);
+    width: 250px;
     padding: 15px;
-    margin-bottom: 15px;
+    margin: 15px;
     border-radius: 5px;
+    display: inline-block;
 }
