@@ -1,3 +1,4 @@
+/* Main body is a grid to allow for easy centering */
 body {
     padding: 15px;
     background-color: orange;
@@ -20,6 +21,13 @@ body {
 
 #user-to-do {
     text-align: center;
+    background-color: #696969;
+    outline-width: 0;
+    color: #dcdcdc
+}
+
+::placeholder {
+    color: #dcdcdc;
 }
 
 #toDoHeader {
@@ -39,6 +47,7 @@ body {
     text-align: center;
 }
 
+/* List items displayed as an inline block to make for nice gridded list  */
 li {
     color: #333333;
     background-color: rgba(255,255,255,.5);
